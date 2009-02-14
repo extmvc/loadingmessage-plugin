@@ -1,0 +1,23 @@
+= Ext MVC Loading Message plugin
+
+Displays a loading indicator and message until the application has loaded fully.  Removed onReady.
+
+== Installation
+1) Add the following to your main HTML file - *before* any JavaScript includes:
+
+<div id="loading-mask" style=""></div>
+<div id="loading">
+  <div class="loading-indicator">
+    Loading...
+  </div>
+</div>
+
+2) Copy assets from the plugin's public directory to the application's public directory
+
+3) Add these lines inside the ext-mvc-plugins div to include the js files:
+
+<div id="ext-mvc-plugins-LoadingMessage">
+  <script type="text/javascript" src="/extapp/vendor/plugins/LoadingMessage/LoadingMessage.js"></script>
+</div>
+
+Author: Ed Spencer
